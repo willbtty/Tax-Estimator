@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tax Estimator</title>
+    <!-- Include Bootstrap CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Estimator</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="income">Annual Income:</label>
+                <input type="number" class="form-control" name="income" required>
+            </div>
+            <div class="form-group">
+                <label for="filing_status">Filing Status:</label>
+                <select class="form-control" name="filing_status" required>
+                    <option value="Single">Single</option>
+                    <option value="Married Filing Jointly">Married Filing Jointly</option>
+                    <!-- Add other statuses -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Estimate Tax</button>
+        </form>
+    </div>
+</body>
+</html>
